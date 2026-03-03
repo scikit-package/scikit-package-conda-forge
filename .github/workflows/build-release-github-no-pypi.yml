@@ -1,4 +1,4 @@
-name: Release on GitHub with tag pushed to remote repository
+name: Build Wheel, Release on GitHub, and Deploy Docs
 
 on:
   workflow_dispatch:
@@ -7,9 +7,11 @@ on:
       - "*" # Trigger on all tags initially, but tag and release privilege are verified in _build-wheel-release-upload.yml
 
 jobs:
-  release:
-    uses: scikit-package/release-scripts/.github/workflows/_release-on-github-on-tag-push.yml@v0
+  build-release:
+    uses: scikit-package/release-scripts/.github/workflows/_build-release-github-no-pypi.yml@v0
     with:
+      project: scikit-package-conda-forge
+      c_extension: false
       maintainer_GITHUB_username: sbillinge
     secrets:
       PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
