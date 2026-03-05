@@ -16,7 +16,7 @@
 
 **Fixed:**
 
-* ``release-on-github-on-tag-push.yml`` is deprecated. Use ``_build-release-github-no-pypi.yml``.
+* ``release-on-github-on-tag-push.yml`` is deprecated. Use ``_build-release-github-no-pypi-no-docs.yml``.
 
 **Security:**
 

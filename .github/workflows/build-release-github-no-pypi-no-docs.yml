@@ -1,4 +1,4 @@
-name: Build Wheel, Release on GitHub, and Deploy Docs
+name: Build Wheel, Release, Upload
 
 on:
   workflow_dispatch:
@@ -8,10 +8,10 @@ on:
 
 jobs:
   build-release:
-    uses: scikit-package/release-scripts/.github/workflows/_build-release-github-no-pypi.yml@v0
+    uses: scikit-package/release-scripts/.github/workflows/_build-release-github-no-pypi-no-docs.yml@v0
     with:
       project: scikit-package-conda-forge
       c_extension: false
-      maintainer_GITHUB_username: sbillinge
+      maintainer_github_username: sbillinge
     secrets:
       PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
