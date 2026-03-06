@@ -4,6 +4,18 @@ Release notes
 
 .. current developments
 
+0.1.2
+=====
+
+**Added:**
+
+* Add entry points in the recipe.
+
+**Fixed:**
+
+* ``release-on-github-on-tag-push.yml`` is deprecated. Use ``_build-release-github-no-pypi-no-docs.yml``.
+
+
 0.1.1
 =====
 
