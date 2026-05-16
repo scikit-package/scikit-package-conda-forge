@@ -1,6 +1,6 @@
 **Added:**
 
-* No news added: Use official ``PyCQA/docformatter`` in ``pre-commit``.
+* No news added: Use ``PyCQA/docformatter`` in ``pre-commit``.
 
 **Changed:**
 
