@@ -15,7 +15,7 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
   entry_points:
-    -  diffpy.pdfgui = diffpy.pdfgui.diffpy_pdfgui_app:main
+    -  diffpy-pdfgui = diffpy.pdfgui.diffpy_pdfgui_app:main
 
 requirements:
   build:
